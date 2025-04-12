@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="fetch.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1> 🌸My Journal🌸 </h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#admin">Admin Panel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to my personal space</h2>
+    <p>where I jot down my dreams, fears, and everything in between.📝</p>
+    <button onclick="scrollToSection('posts')">Explore Posts</button>
+  </section>
+
+  <section id="posts" class="posts">
+    <h2>📰 Latest Posts</h2>
+    <div class="post-container" id="postContainer">
+      <!-- Blog posts will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <section id="admin" class="admin">
+    <h2>🔐 Create Your Post</h2>
+    <form id="adminForm">
+      <input type="text" id="title" placeholder="Post Title" required />
+      <textarea id="content" placeholder="Write your post here..." required></textarea>
+      <button type="submit">Save</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bhoomika's Blog. All rights reserved.</p>
+  </footer>
+
+
+  
+</body>
+</html>
+
+
